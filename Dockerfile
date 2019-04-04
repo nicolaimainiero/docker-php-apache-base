@@ -1,5 +1,4 @@
-FROM php:7.0-apache
-MAINTAINER Webgriffe Srl <support@webgriffe.com>
+FROM php:7-apache
 
 # Install GD
 RUN apt-get update \
