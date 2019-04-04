@@ -1,8 +1,8 @@
 Base PHP with Apache Docker Container
 =====================================
 
-[![](https://images.microbadger.com/badges/version/webgriffe/php-apache-base.svg)](http://microbadger.com/images/webgriffe/php-apache-base "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/webgriffe/php-apache-base.svg)](http://microbadger.com/images/webgriffe/php-apache-base "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/nmainiero/php-apache-base.svg)](http://microbadger.com/images/nmainiero/php-apache-base "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/nmainiero/php-apache-base.svg)](http://microbadger.com/images/nmainiero/php-apache-base "Get your own version badge on microbadger.com")
 
 Dockerized environment for PHP web development and Apache web server.
 
@@ -12,7 +12,7 @@ Features
 * Ability to set Apache document root through `APACHE_DOC_ROOT` environment variable. Default document root is `/var/www/html`
 * Enabled Apache modules: rewrite
 * Ability to set PHP `date.timezone` through `PHP_TIMEZONE` environment variable. Default timezone is `Europe/Rome`
-* Enabled PHP extensions: gd, mcrypt, intl, mysql, mysqli, pdo_mysql, mbstring, soap, opcache, zip, xls
+* Enabled PHP extensions: gd, intl, mysql, mysqli, pdo_mysql, mbstring, soap, opcache, zip, xls
 * Composer installed globally at `/usr/local/bin/composer`
 * Xdebug PHP extension installed but not enabled
 * Ability to enable xdebug PHP extension through `XDEBUG_ENABLE` environment variable which has to be set to `1`
@@ -33,7 +33,3 @@ Credits
 -------
 
 [Webgriffe®](http://www.webgriffe.com/)
-
-
-
-
