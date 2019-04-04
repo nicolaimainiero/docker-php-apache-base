@@ -6,11 +6,6 @@ RUN apt-get update \
     && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
     && docker-php-ext-install gd
 
-# Install MCrypt
-RUN apt-get update \
-    && apt-get install -y libmcrypt-dev \
-    && docker-php-ext-install mcrypt
-
 # Install Intl
 RUN apt-get update \
     && apt-get install -y libicu-dev \
@@ -42,7 +37,9 @@ RUN apt-get update \
 RUN docker-php-ext-install opcache
 
 # Install PHP zip extension
-RUN docker-php-ext-install zip
+RUN apt-get update \
+    && apt-get install -y libzip-dev \
+    && docker-php-ext-install zip
 
 # Install Git
 RUN apt-get update \
